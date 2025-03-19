@@ -9,6 +9,7 @@ import { FormattedMessage } from '@openimis/fe-core';
 import { RIGHT_PAYMENT_CYCLE_SEARCH } from './constants';
 import reducer from './reducer';
 import messages_en from './translations/en.json';
+import messages_fr from './translations/fr.json';
 import PaymentCyclesPage from './pages/PaymentCyclesPage';
 import PaymentCyclePage from './pages/PaymentCyclePage';
 import PaymentCyclePicker from './pickers/PaymentCyclePicker';
@@ -25,7 +26,10 @@ const ROUTE_PAYMENT_CYCLES = 'paymentCycles';
 const ROUTE_PAYMENT_CYCLE = 'paymentCycles/paymentCycle';
 
 const DEFAULT_CONFIG = {
-  translations: [{ key: 'en', messages: messages_en }],
+  translations: [
+    { key: 'en', messages: messages_en },
+    { key: 'fr', messages: messages_fr }
+  ],
   'paymentCycle.deduplicationFieldSelectionDialog': [
     DeduplicationFieldSelectionDialog,
   ],
